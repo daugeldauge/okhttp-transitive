@@ -1,0 +1,11 @@
+plugins {
+    id 'java-platform'
+}
+
+dependencies {
+    constraints {
+        def commonVersion = "3.12.2"
+        runtime "com.squareup.okhttp3:okhttp:$commonVersion"
+        runtime "com.squareup.okhttp3:logging-interceptor:$commonVersion"
+    }
+}
